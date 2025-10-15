@@ -27,7 +27,6 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Fireball hit: " + collision.gameObject.name); 
         hit = true;
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
